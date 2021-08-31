@@ -1,0 +1,14 @@
+.footer__logo{
+    color: $primary-bg-color;
+    font-family: raleway, sans-serif;
+    line-height: 1.19;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    display: block;
+}
+.footer__logo--accent {
+    color: $accent-color;
+    font-family: raleway, sans-serif;
+}

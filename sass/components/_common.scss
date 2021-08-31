@@ -1,0 +1,50 @@
+.html{
+    box-sizing: border-box;
+}
+
+
+.body {
+    color: $primary-color;
+    background: $primary-bg-color;
+    font-family: $main-font;
+    letter-spacing: $main-letter-spacing;
+    font-size: $primary-text-size;
+    line-height: $main-line-height;  
+} 
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} 
+h1,h2,h3,p{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: $primary-a-color;
+}
+textarea{
+    resize: none;
+}
+
+ .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    
+}
+

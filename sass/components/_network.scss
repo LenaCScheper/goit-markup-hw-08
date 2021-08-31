@@ -1,0 +1,32 @@
+.network{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .network__item:not(:last-child){
+      margin-right: 10px;
+  }
+  .network__link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+   border-radius: 50%;
+   text-align: center; 
+   transition: background-color $timing-function;
+
+   &:hover,
+   &:focus{
+    background-color: $accent-color;
+}
+} 
+.network__icon{
+    fill: $primary-a-color;
+    transition: background-color $timing-function;
+
+    .network__link:hover &,
+    .network__link:focus &{
+    fill: $primary-bg-color;
+}
+}
