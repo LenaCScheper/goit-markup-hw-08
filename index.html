@@ -19,22 +19,39 @@ rel="stylesheet"
       <div class="container-main container">
         <nav class="container-main-nav">
             <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+           
             <ul class="site-nav">
-                <li class="site-nav__item"> <a href=""class="site-nav__link--current">Студия</a></li>
+                <li class="site-nav__item"> <a href=""class="site-nav__link site-nav__link--current">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html"class="site-nav__link ">Портфолио</a></li>
                 <li class="site-nav__item"><a href=""class="site-nav__link">Контакты</a></li>
             </ul>
+            <button type="button" class="menu-button js-open-menu"
+            aria-expanded="false">
+            <svg width="24px" height="16px" 
+            aria-label="переключатель мобильного меню"
+            aria-controls="menu-container">
+               
+                <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
+                <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
+            
+            </svg>
+
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+            <button type="button" class="hero__button--main" data-modal-open>Заказать услугу</button> 
+        </div> 
+          
         </nav>
         
             <ul class="contact-nav">
                  <li class="contact-nav__item">
-                     <a class="contact-nav__title" href ="mailto:info@devstudio.com" >
+                     <a class="contact-nav__link" href ="mailto:info@devstudio.com" >
                         <svg class="contact-nav__icon" width="16" height="12">
                             <use href="./img/svg/sprite.svg#icon-envelope"></use>>
                         </svg>
                         info@devstudio.com</a></li>
                  <li class="contact-nav__item">
-                     <a class="contact-nav__title"href="tel:+380961111111" >
+                     <a class="contact-nav__link"href="tel:+380961111111" >
                     <svg class="contact-nav__icon" width="10" height="16">
                         <use href="./img/svg/sprite.svg#icon-Vector"></use>>
                     </svg>
@@ -109,7 +126,7 @@ rel="stylesheet"
         
             <ul class="features">
                 <li  class="features__item">
-                    <div class="features__icon">
+                    <div class="features__box">
                         <svg  width="70" height="70">
                         <use href="./img/svg/sprite.svg#icon-antenna-1"></use>
                         </svg>
@@ -118,7 +135,7 @@ rel="stylesheet"
                     <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции</p>
                 </li >
                 <li class="features__item">
-                    <div class="features__icon">
+                    <div class="features__box">
                         <svg  width="70" height="70">
                         <use href="./img/svg/sprite.svg#icon-diagram-1"></use>
                         </svg>
@@ -127,7 +144,7 @@ rel="stylesheet"
                     <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой</p>
                 </li>
                 <li  class="features__item">
-                    <div class="features__icon">
+                    <div class="features__box">
                         <svg  width="70" height="70">
                         <use href="./img/svg/sprite.svg#icon-clock-1"></use>
                         </svg>
@@ -136,7 +153,7 @@ rel="stylesheet"
                     <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает</p>
                 </li>
                 <li  class="features__item">
-                    <div class="features__icon">
+                    <div class="features__box">
                         <svg  width="70" height="70">
                         <use href="./img/svg/sprite.svg#icon-astronaut-1"></use>
                         </svg>
@@ -149,23 +166,23 @@ rel="stylesheet"
         </section>
         
          <!--Чем мы занимаемся-->
-        <section class="work-section">
+        <section class="section--no-padding-top">
             <div class="container" >
-             <h2 class="work-section__title">Чем мы занимаемся</h2>
-                 <ul class="work-section__images">  
-                 <li class="work-section__picture">
+             <h2 class="work-section">Чем мы занимаемся</h2>
+                 <ul class="work-section__title">  
+                 <li class="work-section__item">
                     <div class="work-section__thumb">
                     <img src="img/box1.jpg" alt="набирает текс"width="370">
                     <p>Десктопные приложения</p>
                 </div>
                 </li>
-                 <li class="work-section__picture">
+                 <li class="work-section__item">
                     <div class="work-section__thumb">
                         <img src="img/box2.jpg" alt="мобильное приложение"width="370">
                     <p>Мобильные приложения</p>
                 </div>
                     </li>
-                 <li class="work-section__picture">
+                 <li class="work-section__item">
                     <div class="work-section__thumb">
                         <img src="img/box3.jpg" alt="планшет"width="370">
                     <p>Дизайнерские решения</p>
@@ -176,15 +193,15 @@ rel="stylesheet"
             </div>
         </section>
         <!--Команда-->
-        <section class=" section comands">
+        <section class=" section--background">
             <div class="container" >
-            <h2 class="comands__title">Наша команда</h2>
+            <h2 class="section__title">Наша команда</h2>
           
-            <ul class="comands__item">
-                <li class="comands__image"><img src="img/img (1).jpg" alt="дизайнер продукта"width="270">
-                    <div class="comands__info"> 
-                    <h3 class="comands__name"> Игорь Демяненко</h3> 
-                     <p class="comands__proffesion">Product Designer</p>
+            <ul class="comand">
+                <li class="comands__item"><img src="img/img (1).jpg" alt="дизайнер продукта"width="270">
+                    <div class="comands__box"> 
+                    <h3 class="comands__title"> Игорь Демяненко</h3> 
+                     <p class="comands__text">Product Designer</p>
                      <ul class="network">
                         <li class="network__item">
                             <a class="network__link" href="" >
@@ -327,10 +344,10 @@ rel="stylesheet"
         </ul>
         </div>
         </section>
-        <section class="section clients">
+        <section class="section ">
             <div class="container">
                 <h2 class="clients__title"> Постоянные клиенты</h2>
-                <ul class="clients__meta">
+                <ul class="clients">
                     <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width=106px height=60px> 
@@ -433,7 +450,13 @@ rel="stylesheet"
          </div>     
               
         </footer>
-        
+        <script src="./js/menu.js"></script>
+        <script defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/menu.js"></script>
         <script src="./js/modal.js"></script>
 </body>
 </html>

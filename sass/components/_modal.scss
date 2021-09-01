@@ -41,6 +41,7 @@
      right: 8px;
      display: flex;
      align-items: center;
+     justify-content: center;
      border-radius: 50%;
      background-color: $primary-bg-color;
      border: $border-modal;
@@ -103,7 +104,7 @@
         line-height: 1.2;
         letter-spacing: 0.01em;
         color: $primary-text-color;
-        margin-bottom: 4px;
+
     }
     .modal-form__comment-placeholder{ 
         font-family: $main-font;
@@ -162,8 +163,8 @@
     }
   }
   .modal-form__policy{
-      font-family: $main-font;
-      letter-spacing: $main-letter-spacing;
+    font-family: $main-font;
+    letter-spacing: $main-letter-spacing;
     color: $primary-text-color;
     font-weight: normal;
     font-size: $primary-text-size;

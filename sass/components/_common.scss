@@ -3,14 +3,18 @@
 }
 
 
-.body {
+body {
     color: $primary-color;
     background: $primary-bg-color;
     font-family: $main-font;
     letter-spacing: $main-letter-spacing;
     font-size: $primary-text-size;
     line-height: $main-line-height;  
+    & .modal-open{
+        overflow: hidden;
+    }
 } 
+
 
 ul{
     padding: 0;

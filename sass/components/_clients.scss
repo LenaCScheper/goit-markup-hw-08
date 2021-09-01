@@ -1,5 +1,14 @@
-.clients__meta{
-    display: flex;
+.clients{
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -15px;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+   
 }
 .clients__title{
     font-family: $main-font;
@@ -35,6 +44,14 @@
     .clients__link:focus &{
         fill: $accent-color;
     }
+}
+.clients__item{
+    @media screen and (min-width:768px){
+        width: calc((100%-4*30px)/3);
+        margin: 15px;
+    }
+        
+   
 }
 .clients__item:not(:last-child){
     margin-right: 30px;

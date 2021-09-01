@@ -1,7 +1,11 @@
-.work-section{
+.section--no-padding-top{
     padding-top: 0;
+    
+    @media (max-width:1199px) {
+        display: none;
+    }
 }
-.work-section__title{
+.work-section{
 margin-bottom: 50px;
 color: $primary-color ;
 font-weight: $main-font-weight;
@@ -11,11 +15,11 @@ letter-spacing: $main-letter-spacing;
 line-height: 1.2;
 text-align: center;
 }
-.work-section__images{
+.work-section__title{
     display: flex;
     justify-content: center; 
     }
-.work-section__picture:not(:first-child){
+.work-section__item:not(:first-child){
      margin-left: 30px;
    }
 .work-section__thumb{
