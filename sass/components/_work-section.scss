@@ -1,8 +1,8 @@
 .section--no-padding-top{
     padding-top: 0;
-    
-    @media (max-width:1199px) {
-        display: none;
+    display: none;
+    @media (max-width:1200px) {
+       display: block;
     }
 }
 .work-section{
