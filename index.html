@@ -25,19 +25,62 @@ rel="stylesheet"
                 <li class="site-nav__item"><a href="./portfolio.html"class="site-nav__link ">Портфолио</a></li>
                 <li class="site-nav__item"><a href=""class="site-nav__link">Контакты</a></li>
             </ul>
-            <button type="button" class="menu-button js-open-menu"
-            aria-expanded="false">
-            <svg width="24px" height="16px" 
+            <button type="button" class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="menu-container" 
+            >
+            <svg width="24" height="16" 
             aria-label="переключатель мобильного меню"
-            aria-controls="menu-container">
-               
-                <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
-                <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
-            
+            >
+             <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
             </svg>
+        </button>   
+        <div class="menu-container" id="menu-container" >
+            <button class="menu-toggle js-close-menu">
+                <svg width="24" height="16" 
+                aria-label="переключатель мобильного меню"
+                >
+                <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
+                </svg> 
+            </button>
+            <ul class="menu-container__box">
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link menu-container__link--current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link " href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="contact-nav-mobile">
+                <ul class="contact-nav-mobile__box">
+                    <li class="contact-nav-mobile__item">
+                <a class="contact-nav-mobile__link" href="tel:=380961111111">=38 096 111 11 11</a>
+                    </li>
+                    <li class="contact-nav-mobile__item">
+                        <a class="contact-nav-mobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                </ul>
+            </div>
+            <div class="contact-nav-social">
+                <ul class="contact-nav-social__box">
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Instagram</a>
+                </li>
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Twitter</a>
+                </li>
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Facebook</a>
+                </li>
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Linkedin</a>
+                </li>
+                </ul>
 
-        </button>
-        <div class="menu-container" id="menu-container" data-menu>
+            </div>
             <button type="button" class="hero__button--main" data-modal-open>Заказать услугу</button> 
         </div> 
           
@@ -63,6 +106,13 @@ rel="stylesheet"
         <!--Уникальное предложение-->
         <section class="hero">  
         <div class="container"> 
+            <img 
+            srcset="./img/Header img450.jpg  450w,
+                    ./img/Header img768.jpg  768w
+                    ./img/Img-bg.jpg         1200w "
+            src="./img/Header img450.jpg" 
+            alt="Фоновая картинка"
+>
             <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
          
       <button type="button" class="hero__button--main" data-modal-open>Заказать услугу</button> 
