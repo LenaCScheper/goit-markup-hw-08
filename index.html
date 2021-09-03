@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 rel="stylesheet"
 />
@@ -15,9 +16,11 @@ rel="stylesheet"
 
 </head>
 <body>
-    <header class="page-header">
-      <div class="container-main container">
-        <nav class="container-main-nav">
+    <header>
+        <section class="section-header">
+            <div class="container section-header__container">
+                <div class="main-menu">
+                    <nav class="menu">
             <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
            
             <ul class="site-nav">
@@ -25,9 +28,26 @@ rel="stylesheet"
                 <li class="site-nav__item"><a href="./portfolio.html"class="site-nav__link ">Портфолио</a></li>
                 <li class="site-nav__item"><a href=""class="site-nav__link">Контакты</a></li>
             </ul>
-            <button type="button" class="menu-toggle js-open-menu"
+                    </nav>
+            <ul class="contact-nav">
+                <li class="contact-nav__item">
+                    <a class="contact-nav__link" href ="mailto:info@devstudio.com" >
+                       <svg class="contact-nav__icon" width="16" height="12">
+                           <use href="./img/svg/sprite.svg#icon-envelope"></use>>
+                       </svg>
+                       info@devstudio.com</a></li>
+                <li class="contact-nav__item">
+                    <a class="contact-nav__link"href="tel:+380961111111" >
+                   <svg class="contact-nav__icon" width="10" height="16">
+                       <use href="./img/svg/sprite.svg#icon-Vector"></use>>
+                   </svg>
+                       +38 (096) 111-11-11</a></li>
+            </ul>
+            </div>
+            <div class="mobile">
+            <button  class="menu-toggle js-open-menu"
             aria-expanded="false"
-            aria-controls="menu-container" 
+            aria-controls="mobile-menu" 
             >
             <svg width="24" height="16" 
             aria-label="переключатель мобильного меню"
@@ -35,7 +55,7 @@ rel="stylesheet"
              <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
             </svg>
         </button>   
-        <div class="menu-container" id="menu-container" >
+        <div class="menu-container" id="mobile-menu" >
             <button class="menu-toggle js-close-menu">
                 <svg width="24" height="16" 
                 aria-label="переключатель мобильного меню"
@@ -43,6 +63,7 @@ rel="stylesheet"
                 <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
                 </svg> 
             </button>
+            <div class="menu-container__mobile">
             <ul class="menu-container__box">
                 <li class="menu-container__item">
                     <a class="menu-container__link" href="./index.html">Студия</a>
@@ -84,35 +105,17 @@ rel="stylesheet"
             <button type="button" class="hero__button--main" data-modal-open>Заказать услугу</button> 
         </div> 
           
-        </nav>
+       
         
-            <ul class="contact-nav">
-                 <li class="contact-nav__item">
-                     <a class="contact-nav__link" href ="mailto:info@devstudio.com" >
-                        <svg class="contact-nav__icon" width="16" height="12">
-                            <use href="./img/svg/sprite.svg#icon-envelope"></use>>
-                        </svg>
-                        info@devstudio.com</a></li>
-                 <li class="contact-nav__item">
-                     <a class="contact-nav__link"href="tel:+380961111111" >
-                    <svg class="contact-nav__icon" width="10" height="16">
-                        <use href="./img/svg/sprite.svg#icon-Vector"></use>>
-                    </svg>
-                        +38 (096) 111-11-11</a></li>
-             </ul>
+           
         </div>
+        
     </header>
     <main>
         <!--Уникальное предложение-->
         <section class="hero">  
         <div class="container"> 
-            <img 
-            srcset="./img/Header img450.jpg  450w,
-                    ./img/Header img768.jpg  768w
-                    ./img/Img-bg.jpg         1200w "
-            src="./img/Header img450.jpg" 
-            alt="Фоновая картинка"
->
+            
             <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
          
       <button type="button" class="hero__button--main" data-modal-open>Заказать услугу</button> 
@@ -247,8 +250,13 @@ rel="stylesheet"
             <div class="container" >
             <h2 class="section__title">Наша команда</h2>
           
-            <ul class="comand">
-                <li class="comands__item"><img src="img/img (1).jpg" alt="дизайнер продукта"width="270">
+            <ul class="comands">
+                <li class="comands__item">
+                    <img srcset="./img/Игорь Демяненко450.jpg 1x,
+                    ./img/Игорь Демяненко450.jpg 2x"
+                    src="./img/Игорь Демяненко450.jpg"
+                     alt="дизайнер продукта"
+                     width="100%">
                     <div class="comands__box"> 
                     <h3 class="comands__title"> Игорь Демяненко</h3> 
                      <p class="comands__text">Product Designer</p>
@@ -283,7 +291,12 @@ rel="stylesheet"
                         </li>
                     </div>
                     </li>  
-                    <li class="comands__image"><img src="img/img (2).jpg" alt="дизайнер продукта"width="270">
+                    <li class="comands__image">
+                        <img srcset="./img/Ольга Репина450.jpg 1x,
+                        ./img/Ольга Репина450.jpg 2x"
+                        src="./img/Ольга Репина450.jpg"
+                         alt="дизайнер продукта"
+                         width="100%"> 
                         <div class="comands__info"> 
                         <h3 class="comands__name"> Ольга Репина</h3> 
                          <p class="comands__proffesion">Frontend Developer</p>
@@ -319,7 +332,12 @@ rel="stylesheet"
                 </ul>
                 </div>
                  </li> 
-                 <li class="comands__image"><img src="img/img (3).jpg" alt="дизайнер продукта"width="270">
+                 <li class="comands__image">
+                    <img srcset="./Николай Тарасов450.jpg 1x,
+                    ./img/Николай Тарасов450.jpg 2x"
+                    src="./img/Николай Тарасов450.jpg"
+                     alt="дизайнер продукта"
+                     width="100%"> 
                     <div class="comands__info"> 
                     <h3 class="comands__name"> Николай Тарасов</h3> 
                      <p class="comands__proffesion">Marketing</p>
@@ -355,7 +373,12 @@ rel="stylesheet"
                     </ul>
                  </div>
                  </li>  
-                <li class="comands__image"><img src="img/img (4).jpg" alt="дизайнер"width="270">
+                <li class="comands__image">
+                    <img srcset="./img.Ермаков450.jpg 1x,
+                        ./img/Ермаков450.jpg 2x"
+                        src="./img/Ермаков.jpg"
+                         alt="дизайнер продукта"
+                         width="100%"> 
                 <div class="comands__info">
                     <h3 class="comands__name">Михаил Ермаков</h3>
                 <p class="ccomands__proffesion">UI Designer</p>

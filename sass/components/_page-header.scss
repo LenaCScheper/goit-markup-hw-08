@@ -1,73 +1,70 @@
 .page-header {
+    position: absolute;
     border-bottom: 1px solid $background-page-header;
    
-    @media screen and (min-width: 480px) {
-        height: 60px;
-        position: relative;
+    @media screen and (max-width: 768px) {
+        & .container{
+            display: none;
+        }
     }
         
-    @media screen and (max-width:1200px)  {
-        height: 80px; 
-        display: flex;
+    @media screen and (min-width:768px)  {
+        & .container{
+            display: flex;
+        }
+       
     }
     
 }
 
 .container {
-    margin-left:auto;
-    margin-right: auto;
+   margin-left: auto;
+   padding: 0px 15px;
+   margin-right: auto;
    
 
-    @media  screen and (max-width:767px) {
+    @media  screen and (min-width:480px) {
         width: 480px;
     }
-    @media screen and (max-width:1200px) {
+    @media screen and (max-width:768px) {
         width:768px
     }
     @media screen and (min-width: 1200px){
         width: 1200px;
     } 
 }
-.container-main{
-    @media screen and (min-width:768px) {
-        display: flex;
-        align-items: center;
-    }
-    @media screen and (min-width:1200px) {
-        display: flex;
-        align-items: center; 
-    }
-   
-} 
-.container-main-nav{
-    @media screen and (min-width:768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    @media screen and (min-width:1200px) {
-        display: flex;
-        align-items: baseline;
-    }
-}
 .logo {
+    display: inline-block;
     color: $primary-color;
     font-family: $secondary-font;
     font-weight: $main-font-weight;
      font-size: 26px;
      line-height: 1.2; 
+
+     @media screen  and (max-width:767px){
+         margin-top: 16px;
+         
+     }
+     @media  screen and (max-width:1199px) {
+         font-size: 24px;
+         line-height: 1.16;
+         margin-top: 26px;
+     }
+     @media screen and (min-width:1200px){
+
+         
+     }
  }
  .logo__accent{
  
      color: $accent-color;
  }
- .menu{
+ 
+ .container-main-nav{
      display: flex;
-     padding: 0;
-     margin: 0;
-     list-style: none;
  }
- .menu-button{
+ .menu-toogle{
 
      @media screen and(min-width:768px){
          display: none;
@@ -89,7 +86,7 @@
      }
  }
     
-     .menu-toggle.icon-cross{
+     .menu-toggle .icon-cross{
          display: none;
          overflow: scroll;
      }
