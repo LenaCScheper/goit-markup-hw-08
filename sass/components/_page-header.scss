@@ -81,7 +81,9 @@
      
 
      @media screen and(min-width:768px){
+         .menu-toogle{
         display: none;
+         }
     }  
 
      &:hover,
@@ -108,10 +110,10 @@
      padding: 40px 48px;
      top: 0;
      left: 0;
-     width: 100 vw;
-     height:100 vh;
+     width: 100vw;
+     height:100vh;
      border:none;
-     border-radius:50%;
+     
      outline:none;
      overflow-y:scroll;
      transform:translateX(100%);

@@ -17,9 +17,19 @@ rel="stylesheet"
 </head>
 <body>
     <header>
-        <section class="section-header">
+        <section>
             <div class="container section-header__container">
                 <div class="main-menu">
+                    <button  class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu" 
+            >
+            <svg width="24" height="16" 
+            aria-label="переключатель мобильного меню"
+            >
+             <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
+            </svg>
+        </button>   
                     <nav class="menu">
             <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
            
@@ -44,18 +54,9 @@ rel="stylesheet"
                        +38 (096) 111-11-11</a></li>
             </ul>
             </div>
-            <div class="mobile">
-            <button  class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu" 
-            >
-            <svg width="24" height="16" 
-            aria-label="переключатель мобильного меню"
-            >
-             <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
-            </svg>
-        </button>   
-        <div class="menu-container" id="mobile-menu" >
+            </div>
+            
+        <div class="menu-container js-menu-container" id="mobile-menu" >
             <button class="menu-toggle js-close-menu">
                 <svg width="24" height="16" 
                 aria-label="переключатель мобильного меню"
@@ -104,10 +105,6 @@ rel="stylesheet"
             </div>
             <button type="button" class="hero__button--main" data-modal-open>Заказать услугу</button> 
         </div> 
-          
-       
-        
-           
         </div>
         
     </header>
@@ -289,6 +286,7 @@ rel="stylesheet"
                                 </svg>
                             </a>
                         </li>
+                     </ul>
                     </div>
                     </li>  
                     <li class="comands__image">
@@ -423,37 +421,37 @@ rel="stylesheet"
                 <ul class="clients">
                     <li class="clients__item">
                         <a class="clients__link" href="">
-                            <svg class="clients__icon" width=106px height=60px> 
+                            <svg class="clients__icon" width="106px" height="60px"> 
                             <use href="./img/svg/sprite.svg#icon-group"></use>
                         </svg></a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link"href="">
-                            <svg class="clients__icon" width=106px height=60px> 
+                            <svg class="clients__icon" width="106px" height="60px"> 
                             <use href="./img/svg/sprite.svg#icon-group-1"></use>
                         </svg></a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link"href="">
-                            <svg class="clients__icon" width=106px height=60px> 
+                            <svg class="clients__icon" width="106px" height="60px"> 
                             <use href="./img/svg/sprite.svg#icon-Object"></use>
                         </svg></a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link"href="">
-                            <svg class="clients__icon" width=106px height=60px> 
+                            <svg class="clients__icon" width="106px" height="60px"> 
                             <use href="./img/svg/sprite.svg#icon-group1"></use>
                         </svg></a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link"href="">
-                            <svg class="clients__icon" width=106px height=60px> 
+                            <svg class="clients__icon" width="106px" height="60px"> 
                             <use href="./img/svg/sprite.svg#icon-group-3"></use>
                         </svg></a>
                     </li>
                     <li class="clients__item">
                         <a class="clients__link"href="">
-                            <svg class="clients__icon" width=106px height=60px> 
+                            <svg class="clients__icon" width="106px" height="60px"> 
                             <use href="./img/svg/sprite.svg#icon-group-4"></use>
                         </svg></a>
                     </li>
