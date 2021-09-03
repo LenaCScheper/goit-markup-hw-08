@@ -15,9 +15,23 @@
  .footer__information{
     color: $footer-information-color;
     line-height: 1.2;
-    display: block;
     transition: color $timing-function;
+    text-align: center;
 
+    @media screen and (min-width:1200px){
+        display: flex;
+     
+    }
+    @media screen and (min-width:768px){
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        -ms-flex-pack: distribute;
+        margin-bottom: 42px;
+    }
+    @media screen and (max-width:767px){
+        margin-bottom: 60px;
+    }
   &:hover,
   &:focus{
     color:$accent-color;
@@ -27,8 +41,12 @@
     margin-bottom: 9px;
  }
 .connect{
+    margin-top:5px ;
+    @media screen and(min-width:1200px) {
+     
     display: block;
     margin-left: 70px;
+    }
 }
 .connect__title{
     display: inline-flex; 
@@ -80,6 +98,11 @@
     margin-right: 10px;
 }
 .mail-nav{
+    margin-top: 5px;
+
+    @media screen and(min-width:1200px){
+        
+    }
     margin-left: 93px;
 }
 .mail-nav__title{
@@ -111,6 +134,10 @@
         margin: 0;
         background-size: contain;
 
+        @media screen  and (max-width:767px){
+            margin-left: auto;
+            margin-right: auto;
+        }
         &::after{
             content: '';
             display: inline-flex;
@@ -129,4 +156,13 @@
     background-color: $secondary-bg-color;
     padding: 15px 0px 15px 16px;
     margin-right: 12px;
+
+    @media screen and(max-width:767px){
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:768px){
+        margin-bottom: 20px;
+    }
+   
 }

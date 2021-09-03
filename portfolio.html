@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 rel="stylesheet"
@@ -39,6 +41,64 @@ rel="stylesheet"
                    +38 (096) 111-11-11</a></li>
         </ul>
           </div>
+          <div class="mobile">
+            <button  class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu" 
+            >
+            <svg width="24" height="16" 
+            aria-label="переключатель мобильного меню"
+            >
+             <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
+            </svg>
+        </button>   
+        <div class="menu-container" id="mobile-menu" >
+            <button class="menu-toggle js-close-menu">
+                <svg width="24" height="16" 
+                aria-label="переключатель мобильного меню"
+                >
+                <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
+                </svg> 
+            </button>
+            <div class="menu-container__mobile">
+            <ul class="menu-container__box">
+                <li class="menu-container__item">
+                    <a class="menu-container__link" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link menu-container__link--current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="menu-container__link " href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="contact-nav-mobile">
+                <ul class="contact-nav-mobile__box">
+                    <li class="contact-nav-mobile__item">
+                <a class="contact-nav-mobile__link contact-nav-mobile__link--current" href="tel:=380961111111">=38 096 111 11 11</a>
+                    </li>
+                    <li class="contact-nav-mobile__item">
+                        <a class="contact-nav-mobile__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                </ul>
+            </div>
+            <div class="contact-nav-social">
+                <ul class="contact-nav-social__box">
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Instagram</a>
+                </li>
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Twitter</a>
+                </li>
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Facebook</a>
+                </li>
+                <li class="contact-nav-social__item">
+                    <a class="contact-nav-social__link"href="#">Linkedin</a>
+                </li>
+                </ul>
+
+            </div>
       </header>
 
     <main>

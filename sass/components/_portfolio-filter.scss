@@ -1,10 +1,21 @@
 .filter{
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-family: inherit;
+    margin: 0;
     list-style: none;
     display: flex;
     justify-content: center;  
+
+    @media screen and (max-width:767px){
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    @media screen and (min-width:768px){
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px){
+        margin-bottom: 50px;
+    }
 }
 .filter__item{
     font-family: $main-font;
@@ -19,6 +30,11 @@
     
     &:not(:last-child){
     margin-right: 8px;
+    }
+    @media screen and (max-width:767px){
+        &:nth-child(-n+3){
+            margin-bottom: 16px;
+        }
     }
 }
 .filter__button{

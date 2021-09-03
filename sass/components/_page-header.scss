@@ -66,19 +66,23 @@
  }
  .menu-toogle{
 
-     @media screen and(min-width:768px){
-         display: none;
-     }  
-     display: inline-flex;
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
      margin: 0;
      padding: 0;
      border: none;
      background-color: transparent;
      position: absolute;
      cursor: pointer;
-     top: 22px;
-     right: 22px;
-     z-index: 999;
+     
+     border-radius:50% ;
+     
+
+     @media screen and(min-width:768px){
+        display: none;
+    }  
 
      &:hover,
      &:focus{
@@ -116,25 +120,36 @@
 
 
      & .is-open{
-         display: block;
+    
          transform: translateX(0);
      }
      @media screen and (min-width:768px){
-         display: flex;
-         flex-grow: 1;
-         justify-content: space-between;
-         margin: 0;
+         display: none;
      }
  }
  .menu-cotainer .menu-toggle{
      position: absolute;
      top: 16px;
      right: 16px;
+     color: $primary-color;
+ }
+ .mobile{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .menu-container__mobile{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
  }
  .menu-container__box{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap-reverse;
      margin: 0;
-     margin-bottom: 100%;
-     padding-top: 8px;
+     padding: 0;
+     list-style: none;
  }
  .menu-container__item{
      font-weight: 500;
@@ -143,6 +158,11 @@
      color: $primary-color;
  }
  .menu-container__link{
+     font-family: $main-font;
+     font-size: 40px;
+     letter-spacing: 0.02em;
+     margin-left: 24px;
+     line-height:1.18;
      color: $primary-color;
  }
  .menu-container__link--current{
@@ -150,6 +170,8 @@
  }
  .contact-nav-social{
      display: flex;
+     margin: 0;
+     padding: 0 0 0 25px;
      list-style: none;
  }
  .contact-nav-social__item:not(:last-child){
@@ -158,14 +180,25 @@
  .contact-nav-mobile__box{
      margin: 0;
  }
- .contact-nav-mobile__item{
-     font-weight: 500;
-     font-size: 24px;
-     line-height: 1.2;
-     letter-spacing: 0.02em;
+ .contact-nav-mobile__item:not(:last-child){
+     margin-bottom: 32px;
  } 
- .contact-nav-mobile__link{
+ .contact-nav-mobile__link--current{
      color: $accent-color;
+     font-family: $main-font;
+     font-size: 34px;
+     letter-spacing:0.02em ;
+     font-weight: 500;
+     line-height: 1.18;
+ }
+ .contact-nav-mobile__link{
+     color: $primary-text-color;
+     font-family: $main-font;
+     font-size: 24px;
+     letter-spacing:0.02em ;
+     font-weight: 500;
+     line-height: 1.18;
+
  }
  .contact-nav-social__link{
      font-weight: 500;
