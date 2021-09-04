@@ -26,23 +26,28 @@
     @media screen and (min-width:1200px){
         .footer__information{
         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        text-align: left;
         }
     }
     @media screen and (min-width:768px){
         .footer__information{
         display: flex;
-        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -ms-flex-pack:distribute;
         justify-content: space-around;
-        -ms-flex-pack: distribute;
+        text-align: center;
         margin-bottom: 42px;
+        }
     }
-}
     @media screen and (max-width:767px){
         .footer__information{
-        margin-bottom: 60px;
+            margin-bottom: 60px;
+        }
     }
-}
- 
+    
 
 .information__contact:not(:last-child){
     margin-bottom: 9px;

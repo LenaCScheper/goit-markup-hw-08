@@ -8,6 +8,11 @@
     margin-bottom: 20px;
     display: block;
 }
+@media screen and (max-width){
+    .footer__logo{
+        margin-bottom: 60px;
+    }
+}
 .footer__logo--accent {
     color: $accent-color;
     font-family: raleway, sans-serif;
