@@ -82,7 +82,6 @@
      background-color: transparent;
      position: absolute;
      cursor: pointer;
-     
      border-radius:50% ;
      
 
@@ -113,17 +112,18 @@
     
      position: fixed;
      background-color: $background-page-header;
-     padding: 40px 48px;
+     justify-content: center;
+     align-items: center;
      top: 0;
      left: 0;
      width: 100vw;
      height:100vh;
      border:none;
-     
+     position: absolute;
      outline:none;
      overflow-y:scroll;
      transform:translateX(100%);
-    
+     z-index: 999;
 
      & .is-open{
     

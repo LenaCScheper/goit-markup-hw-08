@@ -17,28 +17,28 @@ rel="stylesheet"
 </head>
 <body>
     <header>
-        <section>
+        
             <div class="container section-header__container">
-                <div class="main-menu">
+                <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
                     <button  class="menu-toggle js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu" 
             >
-            <svg width="24" height="16" 
+            <svg class="menu-toggle__icon--open" width="24" height="16" 
             aria-label="переключатель мобильного меню"
             >
-             <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
+            <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
+            
             </svg>
         </button>   
-                    <nav class="menu">
-            <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-           
+        <div class="menu-header">
+            <nav>
             <ul class="site-nav">
                 <li class="site-nav__item"> <a href=""class="site-nav__link site-nav__link--current">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html"class="site-nav__link ">Портфолио</a></li>
                 <li class="site-nav__item"><a href=""class="site-nav__link">Контакты</a></li>
             </ul>
-                    </nav>
+            </nav> 
             <ul class="contact-nav">
                 <li class="contact-nav__item">
                     <a class="contact-nav__link" href ="mailto:info@devstudio.com" >
@@ -53,15 +53,16 @@ rel="stylesheet"
                    </svg>
                        +38 (096) 111-11-11</a></li>
             </ul>
+            \
             </div>
             </div>
             
         <div class="menu-container js-menu-container" id="mobile-menu" >
             <button class="menu-toggle js-close-menu">
-                <svg width="24" height="16" 
+                <svg class="menu-toggle__icon-close" width="24" height="16" 
                 aria-label="переключатель мобильного меню"
                 >
-                <use class="icon-menu" href="./img/svg/sprite.svg#icon-menu"></use>
+                <use class="icon-cross" href="./img/svg/sprite.svg#icon-Vector-icon"></use>
                 </svg> 
             </button>
             <div class="menu-container__mobile">
