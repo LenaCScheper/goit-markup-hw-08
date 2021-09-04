@@ -1,24 +1,26 @@
-.page-header {
-    position: absolute;
+header {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-bottom: 1px solid $background-page-header;
 }
    
     @media screen and (max-width: 768px) {
-        .page-header .container {
+        header .container {
             display: none;
         }
     }
         
     @media screen and (min-width:768px)  {
-        .page-header .container{
+        header .container{
             display: flex;
         }
     
     }
-    
 
 
 .container {
+    
    margin-left: auto;
    padding: 0px 15px;
    margin-right: auto;
@@ -83,6 +85,8 @@
      position: absolute;
      cursor: pointer;
      border-radius:50% ;
+     top: 10px;
+     right: 15px;
      
 
      @media screen and(min-width:768px){

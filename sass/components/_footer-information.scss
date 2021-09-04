@@ -17,6 +17,7 @@
     line-height: 1.2;
     transition: color $timing-function;
     text-align: center;
+    align-items: baseline;
     &:hover,
     &:focus{
       color:$accent-color;
