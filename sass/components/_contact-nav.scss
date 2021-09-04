@@ -4,18 +4,24 @@
     margin-top: 0;
     margin-bottom: 0;
     padding:0 ;
+}
+
     @media screen and (max-width:767px) {
+        .contact-nav{
         display: none;
     }
+}
     @media screen and (min-width:768px){
+        .contact-nav{
         margin-left: 88px;
     }
+}
     @media screen and (min-width:1200px) {
-       
+        .contact-nav{
       margin-left: 93px;
     }
-    
 }
+    
 .contact-nav__item{
     font-family: $main-font;
     font-style: $main-font-weight;

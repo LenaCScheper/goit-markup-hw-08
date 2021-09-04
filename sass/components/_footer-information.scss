@@ -17,33 +17,40 @@
     line-height: 1.2;
     transition: color $timing-function;
     text-align: center;
-
+    &:hover,
+    &:focus{
+      color:$accent-color;
+    }
+ }
     @media screen and (min-width:1200px){
+        .footer__information{
         display: flex;
-     
+        }
     }
     @media screen and (min-width:768px){
+        .footer__information{
         display: flex;
         align-items: center;
         justify-content: space-around;
         -ms-flex-pack: distribute;
         margin-bottom: 42px;
     }
+}
     @media screen and (max-width:767px){
+        .footer__information{
         margin-bottom: 60px;
     }
-  &:hover,
-  &:focus{
-    color:$accent-color;
-  }
 }
+ 
+
 .information__contact:not(:last-child){
     margin-bottom: 9px;
  }
 .connect{
     margin-top:5px ;
+}
     @media screen and(min-width:1200px) {
-     
+        .connect{
     display: block;
     margin-left: 70px;
     }
@@ -99,12 +106,12 @@
 }
 .mail-nav{
     margin-top: 5px;
-
+}
     @media screen and(min-width:1200px){
-        
-    }
+        .mail-nav{  
     margin-left: 93px;
 }
+    }
 .mail-nav__title{
     font-weight: 700;
     font-size: 14px;
@@ -134,10 +141,6 @@
         margin: 0;
         background-size: contain;
 
-        @media screen  and (max-width:767px){
-            margin-left: auto;
-            margin-right: auto;
-        }
         &::after{
             content: '';
             display: inline-flex;
@@ -147,7 +150,15 @@
             background-image: url('../img/svg/icon-send.svg');
             background-size: contain;
         }
-}
+    }
+        @media screen  and (max-width:767px){
+            .footer-form__button{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+       
+
 .footer-form__input{
     width: 295px;
     height: 50px;
@@ -156,13 +167,17 @@
     background-color: $secondary-bg-color;
     padding: 15px 0px 15px 16px;
     margin-right: 12px;
-
+}
     @media screen and(max-width:767px){
+        
+   .footer-form__input{
         width: 450px;
         margin-bottom: 20px;
     }
+}
     @media screen and (min-width:768px){
+        
+     .footer-form__input{
         margin-bottom: 20px;
     }
-   
 }

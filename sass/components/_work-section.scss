@@ -1,8 +1,9 @@
 .section--no-padding-top{
     padding-top: 0;
   padding-bottom: 94px;
-   
+}
     @media (max-width:1199px) {
+      .section--no-padding-top{
        display: none
     }
 }
@@ -15,8 +16,9 @@ font-size: 36px;
 letter-spacing: $main-letter-spacing;
 line-height: 1.2;
 text-align: center;
-
+}
 @media screen and(max-width:767px) {
+  .work-section{
     text-align: center;
 }
 }

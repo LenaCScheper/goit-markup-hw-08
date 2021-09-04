@@ -30,16 +30,21 @@
     transition: transform $timing-function;
     border-radius: $main-border-radius;
     box-shadow: $shadow-modal;
-
+}
    @media screen and (min-width:479px){
+    .modal{
        min-height: 609px;
        min-width: 350px;
    }
+}
    @media screen and (min-width:480px){
+    .modal{
     min-height: 609px;
     min-width: 450px;
  }
+}
  @media screen and (min-width:1200px){
+    .modal{
     min-height: 581px;
     min-width: 528px;
 }
@@ -86,12 +91,13 @@
     line-height: 1.16;
     letter-spacing: 00.01em;
     color: $primary-text-color;
-
+}
     @media screen and (max-width:480px){
+        .modal-form__label{
         display: flexbox;
     }
-
-     & .modal-form__input::placeholder{
+    }
+     .modal-form__label .modal-form__input::placeholder{
         font-style: normal;
         font-weight: normal;
         line-height: 14px;
@@ -99,7 +105,7 @@
         letter-spacing: 0.01em;
         color: $placeholder-color;
     }
-   }
+   
    .modal-form__input{ 
      margin-top: 4px;
      height: 40px;
@@ -119,11 +125,11 @@
         line-height: 1.2;
         letter-spacing: 0.01em;
         color: $primary-text-color;
-
+    }
         @media screen and (min-width:1199px) {
+            .modal-form__comment{
             font-size: 12px;
         }
-
     }
     .modal-form__comment-placeholder{ 
         font-family: $main-font;
@@ -188,8 +194,9 @@
     font-weight: normal;
     font-size: $primary-text-size;
     line-height: 1.7;
-
+  }
    @media screen and (max-width:1199px){
+    .modal-form__policy{
        font-size: 12px;
    } 
 }
@@ -201,8 +208,10 @@
     color: $accent-color;
     margin-left: 4px;
     text-decoration-line: underline;
-
+}
     @media screen and (max-width1199px){
+        
+  .modal-form__conditions{ 
         font-size: 12px;
     }
 }
