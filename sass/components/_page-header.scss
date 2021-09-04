@@ -72,10 +72,16 @@ header {
  .container-main-nav{
      display: flex;
  }
- .menu-toogle{
-
-     
+ .menu-toogle{ 
      display: flex;
+     display: -ms-flexbox;
+     display: -webkit-box;
+     min-width: 40px;
+     min-height: 40px;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
      justify-content: center;
      align-items: center;
      margin: 0;
@@ -88,6 +94,11 @@ header {
      top: 10px;
      right: 15px;
      
+     &:hover,
+     &:focus{
+         fill: $accent-color;
+     }
+ }
 
      @media screen and(min-width:768px){
          .menu-toogle{
@@ -95,11 +106,6 @@ header {
          }
     }  
 
-     &:hover,
-     &:focus{
-         fill: $accent-color;
-     }
- }
     
      .menu-toggle .icon-cross{
          display: none;
@@ -135,12 +141,12 @@ header {
      
      }
     }
-    .menu-toggle .is-open{
-     @media screen and (min-width:768px){
-         
-     display: none;
-     }
+    @media screen and (min-width:768px){
+        .menu-container{
+            display: none;
+        }
     }
+   
  
  .menu-cotainer .menu-toggle{
      position: absolute;
@@ -185,14 +191,16 @@ header {
      padding: 0 0 0 25px;
      list-style: none;
  }
- .contact-nav-social__item:not(:last-child){
-     margin-right: 20px;
+ .contact-nav-social__item:nth-child(3){
+    margin-right: 5px;
+    padding-left: 5px;
  }
  .contact-nav-mobile__box{
      margin: 0;
  }
- .contact-nav-mobile__item:not(:last-child){
-     margin-bottom: 32px;
+ .contact-nav-mobile__item:nth-child(2){
+     margin-right: 5px;
+     padding-left: 5px;
  } 
  .contact-nav-mobile__link--current{
      color: $accent-color;

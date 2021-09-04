@@ -1,14 +1,8 @@
 .section--background{
     background-color: $background-icon-color;
+    
 }
-    @media screen and (min-width:768px){
-        .section--background{
-        margin: -15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
+
 .section__title {
     color: $primary-color ; 
     font-family: $main-font;
@@ -37,13 +31,19 @@
     @media screen and (min-width:768px){
         .comands{
       display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
       flex-wrap: wrap;
+      -ms-fill-wrap: wrap;
         margin: -15px;
     }
     }
     @media screen and (min-width:1200px){
         .comands{
         display: flex;
+        display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
 }
