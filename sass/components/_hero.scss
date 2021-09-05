@@ -1,105 +1,108 @@
-.hero{
-    display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(to right, 
-    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-     url(../img/fon-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    content: "";
-   
-}
+/*4hero*/
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-      .hero{
-        background-image: linear-gradient(to right, 
-        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fon-mobile2x.jpg);
-      }
-    }
+/*--Шапка--*/
 
-    @media screen and (min-width:480px){
-      .hero{
-        background-image: linear-gradient(to right, 
-        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fon-tablet.jpg);
-      }
-    }
+.section-hero {
+  background: $hero-footer-bg;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid $logo-studio;
+  background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+    url("../images/fon-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    
- @media screen and ( min-width : 480px) and ( min-device-pixel-ratio :  2 ) , screen and ( min-width :  480px ) and ( -webkit-min-device-pixel-ratio :  2 ) , screen and ( min-width :  480px) and (min-resolution: 192dpi) , screen and (min-width :  480 px) and (min-resolution: 2dppx) {
-        .hero {
-            background-image: linear-gradient(to right, 
-        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fon-tablet2xjpg); 
-        }
-      }
-    @media screen and (min-width:768px){
-      .hero{
-        background-image: linear-gradient(to right, 
-        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img-bg.jpg);
-        }
-      }
-      @media screen and ( min-width : 768px) and ( min-device-pixel-ratio :  2 ) , screen and ( min-width :  480px ) and ( -webkit-min-device-pixel-ratio :  2 ) , screen and ( min-width :  480px) and (min-resolution: 192dpi) , screen and (min-width :  480 px) and (min-resolution: 2dppx) {
-        .hero { 
-            background-image: linear-gradient(to right, 
-        rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Header2x.jpg);
-      }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/fon-mobile2x.jpg");
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/fon-tablet.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $hero-gradient,
+          $hero-gradient
+        ),
+        url("../images/fon-tablet2x.jpg");
     }
-.hero__title{
-    font-family: $main-font;
-    color: $primary-bg-color;
-    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+      url("../images/fon-desk.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $hero-gradient,
+          $hero-gradient
+        ),
+        url("../images/fon-desk2x.jpg");
+    }
+  }
+
+  &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $footer-logo-color;
     text-align: center;
     margin-bottom: 30px;
-}
-    @media screen and (max-width:767px) {
-        .hero__title{
-    font-size:26px ;
-    line-height: 1.62;
-        }
-}
-@media screen and (min-width:768px){
-  .hero-title{
-    font-size: 44px;
-    line-height: 1.4;
-}
-}
- .hero__button--main {
-      font-family: $main-font;
-      color: $primary-bg-color;
-       background-color: $accent-color;
-       border: 1px solid transparent;
-       align-items: center;
-       cursor: pointer;
-       text-indent: inherit;
-       letter-spacing: 0.06em;
-        font-weight: 700;
-       font-size: 16px;
-       line-height:  1.9;
-        display: flex;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 10px;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-bottom: 10px;
-        border-radius: $main-border-radius;
-        transition: background-color $timing-function;
-    
-        &:hover,
-        &:focus{
-         color:$primary-bg-color ;
-        background-color: $background-button-color; 
-    } 
+
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 1.62;
     }
+
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+      line-height: 1.4;
+    }
+  }
+
+  &__button {
+    font-family: "Roboto", ‘Raleway’ sans-serif;
+    font-style: normal;
+    background: $logo-color;
+    color: $footer-logo-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 136px;
+    border: 0;
+
+    fill: Solid;
+    offset: 0px, 4px $button-hero-shadow;
+
+    transition: background 250ms $timing-function,
+      box-shadow 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background: $button-hero;
+      box-shadow: 0px 4px 4px $button-hero-shadow;
+    }
+  }
+}

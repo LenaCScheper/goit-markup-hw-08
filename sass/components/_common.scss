@@ -1,55 +1,59 @@
-.html{
-    box-sizing: border-box;
-}
-
-
+/*1general*/
 body {
-    color: $primary-color;
-    background: $primary-bg-color;
-    font-family: $main-font;
-    letter-spacing: $main-letter-spacing;
-    font-size: $primary-text-size;
-    line-height: $main-line-height;  
-    & .modal-open{
-        overflow: hidden;
-    }
-} 
-
-
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-} 
-h1,h2,h3,p{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-img{
-    display: block;
-   max-width: 100%;
-    height: auto;
-    object-fit:cover;
-}
-a{
-    text-decoration: none;
-    color: $primary-a-color;
-}
-textarea{
-    resize: none;
+  color: $body-color;
+  background-color: $footer-logo-color;
+  font-family: "Roboto", ‘Raleway’ sans-serif;
+  font-style: normal;
 }
 
- .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.visually-hidden{
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    
+body.modal-open {
+  overflow: hidden;
 }
 
+h1,
+h3,
+h2,
+h4,
+p .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  /*width: 1200px;*/
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

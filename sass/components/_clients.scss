@@ -1,97 +1,99 @@
-.clients{
+/*8clients*/
+/*--Постоянные клиенты--*/
+
+.section-clients {
+  &__list {
     list-style: none;
-    margin: 30px;
-    padding: 50px 0 0 0;
-   
-}
-    @media screen and (max-width:767px) {
-        .clients{
-        display: flex;
-        display: -ms-flexbox;
-        display: -webkit-box;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin: -15px;
+    margin: 50px 0 0 0;
+    padding: 0;
+
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+
+    padding: 0;*/
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
     }
-}
-    @media screen and (min-width:768px) {
-        .clients{
-            display: flex;
-            display: -ms-flexbox;
-            display: -webkit-box;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin: -15px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
     }
-}
-    @media screen and (min-width:1200px) {
-        .clients{
-            display: flex;
-            display: -ms-flexbox;
-            display: -webkit-box;
-            -ms-flex-wrap:nowrap;
-            flex-wrap: nowrap;
-            margin: -15px;
-        }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: -15px;
     }
-   
-.clients__title{
-    font-family: $main-font;
-    letter-spacing: $main-letter-spacing;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: $primary-color;
-    margin-bottom: 50px;
-}
-    @media screen and (max-width:767px){
-        .clients__title{
-        font-size: 28px;
-    }
+  }
 }
 
-.clients__link{
+.section-clients {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 12 * 15px) / 6);
+      margin: 15px;
+    }
+  }
+
+  &__thumb {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    border:1px solid  $primary-a-color;
-    border-radius: $main-border-radius;
-    width: 170px;
+    align-items: center;
+    /*width: 170px;*/
     height: 92px;
-    transition: fill $timing-function;
+
+    border: 1px solid $social-links;
+    border-radius: 4px;
+
+    transition: border 250ms $timing-function;
 
     &:hover,
-    &:focus{
-    border-color: $accent-color;
- }
-}
-.clients__icon{
-    fill: $primary-a-color;
-    justify-content: center;
-    align-content: center;
-    transition: fill $timing-function;
-
-    .clients__link:hover &,
-    .clients__link:focus &{
-        fill: $accent-color;
+    &:focus {
+      border: 1px solid $logo-color;
     }
+  }
 }
 
-    @media screen and (max-width:767px){
-        .clients__item{
-        width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;
-    }
+.section-clients {
+  &__thumb svg {
+    fill: $social-links;
+    transition: fill 250ms $timing-function;
+  }
 }
-    @media screen and (min-width:768px)  {
-        .clients__item{
-        width: calc((100% - 6 * 15px) / 3);
-        margin: 15px;
-    }  
-}
-    @media screen and (min-width:1200px)  {
-        .clients__item{
-        width: calc((100% - 12 * 15px) / 6);
-        margin: 15px;
-    }  
+
+.section-clients {
+  &__thumb:focus svg,
+  &__thumb:hover svg {
+    fill: $logo-color;
+  }
 }

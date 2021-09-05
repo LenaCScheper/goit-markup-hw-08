@@ -1,0 +1,72 @@
+/*6doing*/
+/*--Чем мы занимаемся--*/
+
+.section-doing {
+  padding-top: 0;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__list {
+    padding: 50px 0 0 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+
+  &__item + &__item {
+    width: 370px;
+    width: auto;
+    margin-left: 30px;
+  }
+
+  &__img-thumb {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    z-index: 1;
+  }
+
+  &__text-thumb {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 70px;
+    width: 370px;
+
+    background: $doing-background;
+  }
+
+  &__text {
+    font-family: "Roboto", ‘Raleway’ sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $footer-logo-color;
+  }
+}
+
+.section-doing,
+.section-team {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+    }
+  }
+}
