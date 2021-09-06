@@ -62,10 +62,8 @@
 .button-close {
   position: relative;
   display: inline-block;
-
   width: 30px;
   height: 30px;
-
   background: $footer-logo-color;
   border: 1px solid $modal-btn-close-border;
   border-radius: 50%;
@@ -95,7 +93,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -222,14 +220,10 @@
   }
 
   &__label {
-   
     display: flex;
     align-items: center;
     justify-content: center;
-
-    @media screen and (max-width: 480px) {
-      display: flex;
-    }
+    
   }
 
   &__icon {
@@ -241,7 +235,7 @@
     margin-right: 10px;
     background-color: $footer-logo-color;
     transition: border-color 250ms $timing-function,
-      background-color 250ms $timing-function;
+    background-color 250ms $timing-function;
   }
 
   &__input:checked + &__icon {
