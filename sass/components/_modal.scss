@@ -68,7 +68,7 @@
 
   background: $footer-logo-color;
   border: 1px solid $modal-btn-close-border;
-  border-radius: 50% 50%;
+  border-radius: 50%;
   transition: background 250ms $timing-function, fill 250ms $timing-function;
 
   cursor: pointer;
@@ -152,28 +152,26 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
-
+    line-height: 1.16;
     letter-spacing: 0.01em;
-
     color: $tel-color;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 
     @media screen and (max-width: 1199px) {
       font-size: 12px;
     }
   }
 
+ 
+  
   &__input {
+    margin-top: 4px;
     height: 40px;
-  }
-
-  &__textarea,
-  &__input {
-    margin: 0;
-    padding-top: 11px;
-    padding-left: 42px;
-    padding-bottom: 11px;
-
+    padding-left: 35px;
+    
     border: 1px solid $modal-input-border;
     border-radius: 4px;
     outline: none;
@@ -197,15 +195,17 @@
 .form-field {
   &__textarea {
     height: 120px;
-    padding: 12px 16px;
+    padding-top: 16px;
+    padding-left: 12px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-
+    box-sizing: border-box;
     color: $modal-textarea;
+    margin-top: 4px;
   }
 }
 
@@ -223,7 +223,6 @@
 
   &__label {
    
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,8 +236,9 @@
     display: inline-block;
     width: 16px;
     height: 15px;
-    border: 1.7px solid $body-color;
-    border-radius: 2px;
+    border: 2px solid $body-color;
+    border-radius: 3px;
+    margin-right: 10px;
     background-color: $footer-logo-color;
     transition: border-color 250ms $timing-function,
       background-color 250ms $timing-function;
@@ -261,8 +261,6 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
-
     color: $tel-color;
 
     @media screen and (max-width: 1199px) {
@@ -271,13 +269,14 @@
   }
 
   &__link {
-    padding-left: 3px;
+   
     display: inline-block;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    margin-left: 4px;
     text-decoration-line: underline;
 
     color: $logo-color;
@@ -289,34 +288,25 @@
 }
 
 .button--send {
-  font-family: "Roboto", ‘Raleway’ sans-serif;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
-
+  line-height: 1.9;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  padding: 10px 55px;
-
   color: $footer-logo-color;
-
   background: $logo-color;
   box-shadow: 0px 4px 4px $button-hero-shadow;
   border-radius: 4px;
-  border: none;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 
-  border-radius: 4px;
-
-  &:hover {
-    background: $button-hero;
-    box-shadow: 0px 4px 4px $button-hero-shadow;
-    border-radius: 4px;
-  }
-  &:focus {
-    background: $button-hero;
-    box-shadow: 0px 4px 4px $button-hero-shadow;
-    border-radius: 4px;
-  }
+  
 }
