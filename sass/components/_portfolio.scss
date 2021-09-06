@@ -1,5 +1,4 @@
-/*9portfolio*/
-/*--Портфолио--*/
+
 .section-projects {
   @media screen and (max-width: 767px) {
     padding-top: 60px;
@@ -9,12 +8,10 @@
 
 .filters {
   display: flex;
-  list-style: none;
-  padding: 0;
-
+ 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
@@ -77,10 +74,8 @@
 }
 
 .project {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
+  
+  
 
   @media screen and (min-width: 768px) {
     margin: -15px;

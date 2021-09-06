@@ -1,5 +1,4 @@
-/*5*features*/
-/*--Особенности--*/
+нности--*/
 
 .visually-hidden {
   /* Скрыли h2 на главной и в портфолио */
@@ -11,10 +10,11 @@
 }
 
 .section-features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 1200px;
   &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+   
 
     @media screen and (min-width: 768px) {
       display: flex;

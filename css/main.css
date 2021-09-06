@@ -1317,20 +1317,18 @@ a {
   margin-bottom: 30px;
 }
 
-/*6doing*/
-/*--Чем мы занимаемся--*/
-.section-doing {
+.section-work {
   padding-top: 0;
   padding-bottom: 94px;
 }
 
 @media screen and (max-width: 1199px) {
-  .section-doing {
+  .section-work {
     display: none;
   }
 }
 
-.section-doing__list {
+.section-work__list {
   padding: 50px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1339,13 +1337,13 @@ a {
   margin: 0;
 }
 
-.section-doing__item + .section-doing__item {
+.section-work__item + .section-work__item {
   width: 370px;
   width: auto;
   margin-left: 30px;
 }
 
-.section-doing__img-thumb {
+.section-work__img-thumb {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1356,7 +1354,7 @@ a {
   z-index: 1;
 }
 
-.section-doing__text-thumb {
+.section-work__text-thumb {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1372,7 +1370,7 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section-doing__text {
+.section-work__text {
   font-family: "Roboto", ‘Raleway’ sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1383,7 +1381,7 @@ a {
   color: #ffffff;
 }
 
-.section-doing__title,
+.section-work__title,
 .section-team__title {
   font-weight: 700;
   font-size: 36px;
@@ -1393,7 +1391,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .section-doing__title,
+  .section-work__title,
   .section-team__title {
     font-size: 28px;
   }

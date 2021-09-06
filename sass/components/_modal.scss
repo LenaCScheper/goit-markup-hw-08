@@ -1,5 +1,4 @@
-/*2modal*/
-/* Модальное окно */
+
 
 .backdrop {
   position: fixed;
@@ -23,9 +22,7 @@
 
 .modal {
   position: absolute;
-
   padding: 40px 39px 40px 41px;
-
   top: 50%;
   left: 50%;
 
@@ -63,10 +60,8 @@
 .button-close {
   position: relative;
   display: inline-block;
-
   width: 30px;
   height: 30px;
-
   background: $footer-logo-color;
   border: 1px solid $modal-btn-close-border;
   border-radius: 50% 50%;
@@ -99,16 +94,13 @@
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-
     margin-bottom: 12px;
-
     color: $body-color;
   }
 
   &__form {
     display: block;
-    height: 342px;
-    margin-bottom: 20px;
+   
   }
 }
 
@@ -134,7 +126,7 @@
   }
 
   &__svg {
-    margin-left: 12px;
+    left: 12px;
     top: 25%;
     position: absolute;
 
@@ -155,9 +147,12 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
-
+    line-height: 1.16;
+    margin-bottom: 10px;
     letter-spacing: 0.01em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     color: $tel-color;
 
@@ -167,7 +162,9 @@
   }
 
   &__input {
+    margin-top: 4px;
     height: 40px;
+    padding-left: 35px;
   }
 
   &__textarea,
@@ -225,9 +222,6 @@
   }
 
   &__label {
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -259,7 +253,7 @@
 
   &__text {
     display: flex;
-    padding-left: 8.38px;
+   
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
