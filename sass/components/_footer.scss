@@ -25,11 +25,13 @@
 
     @media screen and (max-width: 767px) {
       margin-bottom: 60px;
+      text-align: center;
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
+      text-align: left;
     }
   }
 }
@@ -90,6 +92,7 @@
 
 /*--Social links--*/
 .join {
+  
  
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
@@ -106,12 +109,15 @@
     color: $footer-logo-color;
     margin-bottom: 20px;
   }
+  @media screen and (max-width:1199px){
+    text-align: center;
+  }
 }
 
 .social-links {
   &__item {
     &:not(:nth-last-child(4)) {
-      padding-left: 10px;
+      margin-left: 10px;
     }
   }
 
@@ -140,9 +146,7 @@
   }
 
   &__text {
-    margin-top: 0;
-    margin-bottom: 20px;
-
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -150,10 +154,15 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 
     color: $footer-logo-color;
+    @media screen and (max-width:1199px){
+      text-align: center;
+    }
   }
 }
+
 
 .form {
   display: flex;

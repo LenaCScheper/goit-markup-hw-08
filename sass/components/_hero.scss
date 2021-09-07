@@ -13,8 +13,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  content: '';
-  display: flex;
+  
+  
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -42,6 +42,10 @@
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
       url("../images/fon-desk.jpg");
+      background-repeat: no-repeat;
+     background-position: center;
+      background-size: cover;
+      text-align: center;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -65,8 +69,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  content: '';
-  display: flex;
+  
     }
   }
 
