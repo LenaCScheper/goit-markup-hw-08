@@ -1,11 +1,10 @@
 
 .section-hero {
   background: $hero-footer-bg;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid $logo-studio;
@@ -54,6 +53,21 @@
         ),
         url("../images/fon-desk2x.jpg");
     }
+    @media screen and (min-width:1200px) {
+  background: $hero-footer-bg;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
+    url("../images/fon-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  content: '';
+  display: flex;
+    }
   }
 
   &__title {
@@ -70,6 +84,11 @@
     }
 
     @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.4;
+    }
+
+    @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.4;
     }
