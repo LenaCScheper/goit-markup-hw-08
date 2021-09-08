@@ -906,15 +906,9 @@ a {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
+  top: 10px;
   right: 16px;
   color: #212121;
-}
-
-.mobile {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 /* button-open */
@@ -937,6 +931,7 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
+  position: absolute;
 }
 
 @media (min-width: 768px) {
