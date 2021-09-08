@@ -20,7 +20,7 @@
       display: flex;
       justify-content: space-around;
       align-items: baseline;
-      margin-bottom: 60px;
+     
     }
 
     @media screen and (max-width: 767px) {
@@ -32,6 +32,7 @@
       display: flex;
       align-items: baseline;
       text-align: left;
+      margin-bottom: 0;
     }
   }
 }
