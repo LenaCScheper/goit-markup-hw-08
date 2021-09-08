@@ -283,6 +283,7 @@ p {
 }
 
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -302,6 +303,11 @@ a {
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -671,20 +677,6 @@ a {
   height: 80px;
 }
 
-.section-header__container {
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media screen and (max-width: 767px) {
   .section-header__container {
     -webkit-box-pack: justify;
@@ -699,9 +691,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
@@ -828,12 +820,6 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 70px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-tel-email {
-    margin-left: 240px;
   }
 }
 
@@ -1104,9 +1090,9 @@ a {
   padding-bottom: 118px;
   text-align: center;
   height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid #000000;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon-mobile.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile.jpg");
   background-repeat: no-repeat;
@@ -1118,20 +1104,6 @@ a {
   .section-hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon-mobile2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile2x.jpg");
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .section-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon-tablet.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-tablet.jpg");
-  }
-}
-
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .section-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon-tablet2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-tablet2x.jpg");
   }
 }
 
@@ -1159,13 +1131,19 @@ a {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    max-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon-mobile.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon-mobile2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon-mobile2x.jpg");
   }
 }
 
@@ -1257,10 +1235,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -1334,7 +1308,6 @@ a {
 }
 
 .section-work__list {
-  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1400,8 +1373,17 @@ a {
   }
 }
 
+.section-work .section-work__title,
+.section-team .section-work__title {
+  margin-bottom: 52px;
+}
+
 .section-team {
   background-color: #f5f4fa;
+}
+
+.section-team__title {
+  margin-bottom: 30px;
 }
 
 .section-team__list {
@@ -1696,7 +1678,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .project {
-    margin: -15px;
+    margin: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1721,8 +1703,8 @@ a {
 
 @media screen and (min-width: 1200px) {
   .project__item {
-    -ms-flex-preferred-size: calc((100% - 3 * 45px) / 3);
-        flex-basis: calc((100% - 3 * 45px) / 3);
+    -ms-flex-preferred-size: calc((100% - 3 * 90px) / 3);
+        flex-basis: calc((100% - 3 * 90px) / 3);
     margin: 15px;
   }
 }
@@ -1869,6 +1851,7 @@ a {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 

@@ -8,10 +8,9 @@
   }
 
   &__list {
-    margin-bottom: 50px;
+  
     display: flex;
-    
-    
+  
   }
 
   &__item + &__item {
@@ -66,5 +65,8 @@
     @media screen and (max-width: 767px) {
       font-size: 28px;
     }
+  }
+  .section-work__title{
+    margin-bottom: 52px;
   }
 }

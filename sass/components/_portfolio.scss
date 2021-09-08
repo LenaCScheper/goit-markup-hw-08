@@ -74,11 +74,9 @@
 }
 
 .project {
-  
-  
 
   @media screen and (min-width: 768px) {
-    margin: -15px;
+   margin: 15px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -96,7 +94,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 3 * 45px) / 3);
+      flex-basis: calc((100% - 3 * 90px) / 3);
       margin: 15px;
     }
   }
