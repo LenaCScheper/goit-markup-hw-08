@@ -1,10 +1,5 @@
 
-.section-projects {
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
+
 
 .filters {
   display: flex;
@@ -76,7 +71,7 @@
 .project {
 
   @media screen and (min-width: 768px) {
-   margin: 15px;
+   margin: -15px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -88,13 +83,13 @@
       }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      flex-basis: calc((100% - 2 * 30px) / 2);
+    @media screen and (min-width: 768px)  {
+      flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 3 * 90px) / 3);
+      flex-basis: calc((100% - 6 * 15px) / 3);
       margin: 15px;
     }
   }

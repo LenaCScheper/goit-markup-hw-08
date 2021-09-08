@@ -21,8 +21,7 @@
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
       url("../images/fon-mobile2x.jpg");
-  }
-
+    }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
@@ -31,6 +30,7 @@
      background-position: center;
       background-size: cover;
       text-align: center;
+  
   
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -42,6 +42,7 @@
         ),
         url("../images/fon-desk2x.jpg");
     }
+  
     @media screen and (min-width:1200px) {
   background: $hero-footer-bg;
   padding-top: 200px;
@@ -63,7 +64,7 @@
       $hero-gradient
     ),
     url("../images/fon-mobile2x.jpg");
-  }
+    }
     }
   }
 
